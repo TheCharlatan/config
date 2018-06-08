@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -170,3 +171,6 @@ set backupcopy=yes
 
 " Markdown-specific settings
 autocmd FileType markdown set formatoptions+=t | set tw=79
+
+colorscheme molokai
+hi Normal guibg=NONE ctermbg=NONE
