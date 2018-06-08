@@ -12,4 +12,5 @@ git clone https://github.com/flazz/vim-colorschemes.git ~/.vim/bundle/colorschem
 vim -c ":PluginInstall"
 git clone https://github.com/Valloric/YouCompleteMe ~/.vim/bundle/YouCompleteMe
 cd ~/.vim/bundle/YouCompleteMe
+git submodule update --init --recursive
 ./install.py --clang-completer
