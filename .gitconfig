@@ -7,7 +7,7 @@
 [user]
 	name = Sebastian Kung
 	email = seb.kung@gmail.com
-	signingkey = 017F21BB
+	signingkey = 305224CB
 [credential]
 	helper = cache --timeout=3600
 [commit]
