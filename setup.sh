@@ -14,4 +14,8 @@ git clone https://github.com/Valloric/YouCompleteMe ~/.vim/bundle/YouCompleteMe
 cd ~/.vim/bundle/YouCompleteMe
 git submodule update --init --recursive
 ./install.py --clang-completer
-ln -v -s `pwd`/.gitconfig
+cp .gitconfig ~/.gitconfig
+cp .gitignore ~/.gitignore
+cd ~ && git clone https://github.com/gabrielelana/awesome-terminal-fonts
+cd awesome-terminal-fonts
+./build.sh && cp -r build ~/.fonts && fc-cache -fv ~/.fonts
